@@ -51,7 +51,17 @@ source env/bin/activate
 pip install --upgrade pip
 pip install -r config/requirements.txt
  ```
-
+ 
+ If you work on Windows:
+```console
+Set-ExecutionPolicy Unrestricted -Scope CurrentUser
+cd env
+.\Scripts\activate
+python.exe -m pip install --upgrade pip 
+cd ..\config
+pip install -r requirements.txt
+ ```
+ 
 ## Mastodon listener
 The python `mastodon_stream` application listens for posts to the specified server (you must have got a token from that mastodon server to get access), and sends each toot to Kafka. You can run multiple Mastodon listeners, each listening to the activity of different servers.
 
