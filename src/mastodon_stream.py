@@ -10,9 +10,6 @@ from aux.kafka.kafka_m_producer import kafka_m_producer
 
 # globals
 base_url = ''
-enable_kafka = False
-quiet = False
-watchdog = False
 topic_name, producer = '' , ''
 
 
