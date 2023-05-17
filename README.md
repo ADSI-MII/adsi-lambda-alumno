@@ -73,7 +73,7 @@ python3 src/mastodon_stream.py --baseURL https://mastodon.world
 As an optional step, you can check in another terminal that AVRO messages are being written to kafka
 
 ```console
-python src/aux/kafka_m_consumer.py
+python src/aux/kafka/kafka_m_consumer.py
 ```
 
 ## Launch speed and batch layers with faust agents
