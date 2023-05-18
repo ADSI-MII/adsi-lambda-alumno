@@ -84,6 +84,12 @@ cd src
 faust -A mastodon_lambda worker -l info
 ```
 
+Or in Windows if you have any issue with the previous:
+
+```console
+python src/mastodon_lambda.py worker
+```
+
 # Optional steps
 
 ## Cleanup of virtual environment and docker usage
